@@ -253,6 +253,10 @@ class Trainer:
                 # Get the loss from the loss function
                 current_loss = self.loss_fn(predictions, targets)
                 
+                '''
+                ALERT: You need to comment out the following code if you are working on general problem. 
+                The code below is designed only for BST236-HW6 Problem 1.
+                '''
                 # For reporting purposes, only report the testing MSE loss
                 if not isinstance(self.optimizer, (ISTA, FISTA)):
                     # For not ISTA/FISTA, remove L1 penalty to the reported loss

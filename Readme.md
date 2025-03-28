@@ -103,7 +103,7 @@ You only need to do the following to complete this task:
 - The training logs and results will be saved in `LOGS_DIR` and `RESULTS_DIR` in `src/config_Lasso.py`. You can find the best learning rate by using `experiment_summary.ipynb`. (For this problem, the best learning rate should give fastest convergence.) Pay attention you need to change the line `log_dir = 'output/logs'` to `log_dir = 'lasso_output/logs'` in the `experiment_summary.ipynb` to properly process the results.
 
 
-**1.5** (**Summarize the numerical experiments**) Compare the performance of the above algorithms with the best learning rate using `experiment_summary.ipynb`. Report your results and explain your observations in `Readme.md#Report`. Summarize the pros and cons for the current workflow for hyperparameter tuning and different method comparison and how you could improve the workflow template for your future model training.
+**1.5** (**Summarize the numerical experiments**) Compare the performance of the above algorithms with the best learning rate using `experiment_summary.ipynb`. Report your results and explain your observations in `Readme.md#Report`. Summarize the pros and cons for the current workflow for hyperparameter tuning and different method comparison and how you could improve the workflow template for your future model training. Although not required, you are encouraged to explore how other hyperparameters (especially the batch size) may impact the performance of the optimization.
 
 ## Problem 2: Non-convex Optimization
 
