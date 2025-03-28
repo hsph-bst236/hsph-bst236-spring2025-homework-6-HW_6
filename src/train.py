@@ -203,7 +203,7 @@ class Trainer:
             targets = targets.to(self.device)
 
             # Forward pass
-            predictions = self.model(data)
+            predictions = self.model(data).squeeze(1)
             
             # Get the loss from the loss function (might or might not include L1)
             current_loss = self.loss_fn(predictions, targets)
