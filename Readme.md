@@ -81,7 +81,7 @@ python3 src/main_Lasso.py
 ```
   
 
-**1.4** (**Tuning the hyperparameters**) Find the best learning rate among `[0.0001, 0.001, 0.01, 0.1]` to minimize the validation MSE loss for the following algorithms:
+**1.4** (**Tuning the hyperparameters**) Find the best learning rate among `[0.0001, 0.001, 0.01, 0.1]` with the fastest convergence for the following algorithms:
 
 1. [Gradient descent](https://junwei-lu.github.io/bst236/chapter_optimization/gradient_descent/): directly compute the gradient of l1-penalized loss
 2. [ISTA](https://junwei-lu.github.io/bst236/chapter_optimization/proximal_gradient_descent/#example-lasso)
