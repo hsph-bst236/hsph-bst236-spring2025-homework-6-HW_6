@@ -8,10 +8,10 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 # Hyperparameters
 NUM_EPOCHS = 1000
 BATCH_SIZE = 5
-LEARNING_RATE = 0.2
+LEARNING_RATE = 0.01
 
 # Optimizer choices: GD, SGD, RMSprop, Adam
-OPTIMIZER = "SGD"
+OPTIMIZER = "GD"
 
 #TODO: Problem 2.3: Scheduler choices: StepLR, CosineAnnealingWarmRestarts, None
 SCHEDULER = "None"

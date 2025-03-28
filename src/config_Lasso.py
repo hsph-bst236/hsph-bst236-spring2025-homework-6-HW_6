@@ -11,7 +11,7 @@ BATCH_SIZE = 1000
 LEARNING_RATE = 0.01
 
 # Lasso parameters
-L1_REG = 0.2
+L1_REG = 0.4
 
 # Optimizer choices: ISTA, FISTA, GD, SGD, Adam
 OPTIMIZER = "GD"

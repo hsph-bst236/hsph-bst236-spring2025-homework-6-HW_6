@@ -14,8 +14,8 @@ class LinearRegressionModel(nn.Module):
         super().__init__()  # Call the constructor of the parent class
         self.linear = nn.Linear(input_dim, output_dim)
         # Initialize weights and bias to zero
-        # nn.init.zeros_(self.linear.weight)
-        # nn.init.zeros_(self.linear.bias)
+        nn.init.zeros_(self.linear.weight)
+        nn.init.zeros_(self.linear.bias)
 
     def forward(self, x):
         return self.linear(x)

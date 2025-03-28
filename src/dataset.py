@@ -15,7 +15,7 @@ class SparseLinearRegressionDataset(Dataset):
         Create a synthetic dataset for high-dimensional linear regression with sparse weights.
         Y = Xw + noise, where
         dim of w  = input_dim
-        Only first int(input_dim * sparsity) entries of w are 1 and the rest are 0
+        Only first int(input_dim * sparsity) entries of w are 10 and the rest are 0
         X are iid from N(0, 1)
         noise ~ N(0, noise_std)
 

@@ -50,7 +50,7 @@ $Y = Xw + \varepsilon$, where
 $X \in \mathbb{R}^{n\times d}$ with entries $X_{ij} \sim \mathcal{N}(0,1)$ i.i.d.
 
 $w \in \mathbb{R}^d$ is a sparse vector where:
-  - $w_j = 1$ for $j \leq \lfloor d\times s\rfloor$
+  - $w_j = 10$ for $j \leq \lfloor d\times s\rfloor$
   - $w_j = 0$ for $j > \lfloor d\times s\rfloor$
   
 $\varepsilon \sim \mathcal{N}(0, \sigma^2I_n)$
