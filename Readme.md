@@ -61,6 +61,7 @@ $$\frac{1}{n}||y-\hat y||_2^2 + \lambda||w||_1.$$
 
 in `mse_with_l1_reg` function in `src/main_Lasso.py`.
 
+We will choose $\lambda = 0.4$ in this problem by setting `L1_REG = 0.4` in `src/config_Lasso.py`.
 Once you have finished all the `#TODO`s, you should be able to run the following command to train the model if `OPTIMIZER == 'SGD'` in `src/config_Lasso.py`.
 
 ```bash

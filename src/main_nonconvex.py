@@ -23,11 +23,14 @@ class NonconvexTrainer(Trainer):
         self.parameter_history = []
         self.scheduler = scheduler
         
-    def _evaluate_model(self, pbar=None):
+    def _evaluate_model(self, loader=None, pbar=None):
         """
         Override the evaluation method to directly compute the nonconvex objective
         without using validation data.
         """
+        if loader is None:
+            loader = self.val_loader  # Default to validation loader if none specified
+        
         self.model.eval()  # Set the model to evaluation mode
         
         with torch.no_grad():
