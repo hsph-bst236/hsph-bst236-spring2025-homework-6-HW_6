@@ -68,14 +68,14 @@ def main():
         loss_fn = nn.MSELoss()
         hyperparams['BATCH_SIZE'] = NUM_SAMPLES
     elif hyperparams['OPTIMIZER'] == "GD":
-        optimizer = optim.SGD(model.parameters(), lr=LEARNING_RATE)
+        optimizer = optim.SGD(model.parameters(), hyperparams['LEARNING_RATE'])
         loss_fn = lambda pred, target: mse_with_l1_reg(pred, target, model, L1_REG)
         hyperparams['BATCH_SIZE'] = NUM_SAMPLES
     elif hyperparams['OPTIMIZER'] == "SGD":
         optimizer = optim.SGD(model.parameters(), lr=hyperparams['LEARNING_RATE'])
         loss_fn = lambda pred, target: mse_with_l1_reg(pred, target, model, hyperparams['L1_REG'])
     elif hyperparams['OPTIMIZER'] == "Adam":
-        optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
+        optimizer = optim.Adam(model.parameters(), lr=hyperparams['LEARNING_RATE'])
         loss_fn = lambda pred, target: mse_with_l1_reg(pred, target, model, L1_REG)
     else:
         raise ValueError(f"Invalid optimizer: {OPTIMIZER}")
